@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-md-5">
+        <app-recipe-list (recipeWasSelected)="selectedRecipe=$event"/>
+    </div>
+    <div class="col-md-7">
+        @if ( selectedRecipe != null) 
+        {
+            <app-recipe-detail [recipe]="selectedRecipe"/>
+        }
+        @else 
+        {
+            <p> Please select a recipe from the list or create a new recipe. </p>
+        }
+    </div>
+</div>
