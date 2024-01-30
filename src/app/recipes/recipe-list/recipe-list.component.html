@@ -6,9 +6,9 @@
 <hr>
 <div class="row">
     <div class="col-xs-12">
-        @for (recipe_obj of recipe_list; track $index) 
+        @for (recipe_obj of recipelist; track $index) 
         {
-            <app-recipe-item [recipe]="recipe_obj" (recipeSelected)="onRecipeSelected( recipe_obj)"/>  
+            <app-recipe-item [recipe]="recipe_obj" />  
         }      
     </div>
 </div>
